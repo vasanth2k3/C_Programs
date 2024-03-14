@@ -1,0 +1,17 @@
+#include <stdio.h>
+int fib(int n,int a,int b){
+   if(n>0){
+   printf("%d ",b);
+   return fib(n-1,b,a+b);
+   }
+}
+
+
+
+void main(){
+   int n;
+   scanf("%d",&n);
+   printf("%d ",0);
+   fib(n-1,0,1);
+
+}
